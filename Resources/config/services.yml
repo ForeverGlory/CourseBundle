@@ -1,0 +1,4 @@
+services:
+#    glory_course.example:
+#        class: Glory\Bundle\CourseBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
