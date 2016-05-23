@@ -41,35 +41,35 @@ class CourseLessonLearn
     /**
      * @var string
      *
-     * @ORM\Column(name="status", type="string", nullable=false)
+     * @ORM\Column(name="status", type="string", nullable=true)
      */
     protected $status;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="start_time", type="integer", nullable=false)
+     * @ORM\Column(name="start_time", type="integer", nullable=true)
      */
     protected $startTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="finished_time", type="integer", nullable=false)
+     * @ORM\Column(name="finished_time", type="integer", nullable=true)
      */
     protected $finishedTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="learn_time", type="integer", nullable=false)
+     * @ORM\Column(name="learn_time", type="integer", nullable=true)
      */
     protected $learnTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="watch_time", type="integer", nullable=false)
+     * @ORM\Column(name="watch_time", type="integer", nullable=true)
      */
     protected $watchTime;
 
@@ -83,14 +83,14 @@ class CourseLessonLearn
     /**
      * @var string
      *
-     * @ORM\Column(name="video_status", type="string", nullable=false)
+     * @ORM\Column(name="video_status", type="string", nullable=true)
      */
     protected $videoStatus;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="update_time", type="integer", nullable=false)
+     * @ORM\Column(name="update_time", type="integer", nullable=true)
      */
     protected $updateTime;
 

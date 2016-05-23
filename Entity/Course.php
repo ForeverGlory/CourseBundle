@@ -16,7 +16,7 @@ class Course
      * @var integer
      *
      * @ORM\Id
-     * @ORM\Column(name="id", type="integer", unique=false)
+     * @ORM\Column(name="id", type="integer")
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     protected $id;
@@ -31,14 +31,14 @@ class Course
     /**
      * @var string
      *
-     * @ORM\Column(name="subtitle", type="string", nullable=false)
+     * @ORM\Column(name="subtitle", type="string", nullable=true)
      */
     protected $subtitle;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="picture", type="string", nullable=false)
+     * @ORM\Column(name="picture", type="string", nullable=true)
      */
     protected $picture;
 
@@ -106,7 +106,7 @@ class Course
     /**
      * @var string
      *
-     * @ORM\Column(name="about", type="text", nullable=false)
+     * @ORM\Column(name="about", type="text", nullable=true)
      */
     protected $about;
 
@@ -118,35 +118,35 @@ class Course
     /**
      * @var string
      *
-     * @ORM\Column(name="goals", type="text", nullable=false)
+     * @ORM\Column(name="goals", type="text", nullable=true)
      */
     protected $goals;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="audiences", type="text", nullable=false)
+     * @ORM\Column(name="audiences", type="text", nullable=true)
      */
     protected $audiences;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="address", type="string", nullable=false)
+     * @ORM\Column(name="address", type="string", nullable=true)
      */
     protected $address;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="student_num", type="integer", nullable=false)
+     * @ORM\Column(name="student_num", type="integer", nullable=true)
      */
     protected $studentNum;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="hit_num", type="integer", precision=0, scale=0, nullable=false, unique=false)
+     * @ORM\Column(name="hit_num", type="integer", precision=0, scale=0, nullable=true, unique=false)
      */
     protected $hitNum;
 
@@ -165,28 +165,28 @@ class Course
     /**
      * @var integer
      *
-     * @ORM\Column(name="created_time", type="integer", nullable=false)
+     * @ORM\Column(name="created_time", type="integer", nullable=true)
      */
     protected $createdTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="updated_time", type="integer", nullable=false)
+     * @ORM\Column(name="updated_time", type="integer", nullable=true)
      */
     protected $updatedTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="free_start_time", type="integer", nullable=false)
+     * @ORM\Column(name="free_start_time", type="integer", nullable=true)
      */
     protected $freeStartTime;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="free_end_time", type="integer", nullable=false)
+     * @ORM\Column(name="free_end_time", type="integer", nullable=true)
      */
     protected $freeEndTime;
 
